@@ -1,0 +1,5 @@
+SELECT COUNT(*)
+FROM(SELECT COUNT(*) as CAT_NUM
+    FROM Categories
+    GROUP BY Categories.ItemID)
+WHERE CAT_NUM = 4;
